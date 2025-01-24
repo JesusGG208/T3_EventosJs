@@ -1,0 +1,77 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Ejercicio 14 - DOM b�sico y atributos XHTML</title>
+    <script type="d23aefe514db86a02c339ef7-text/javascript">
+        function muestraOculta() {
+        }
+</script>
+</head>
+
+<body>
+    <p id="contenidos_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus
+        libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc,
+        posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices
+        porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis,
+        faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at
+        posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+    <a id="enlace_1" href="#">Ocultar contenidos</a>
+    <br />
+    <p id="contenidos_2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus
+        libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc,
+        posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices
+        porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis,
+        faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at
+        posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+    <a id="enlace_2" href="#">Ocultar contenidos</a>
+    <br />
+    <p id="contenidos_3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus
+        libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc,
+        posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices
+        porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis,
+        faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at
+        posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+    <a id="enlace_3" href="#">Ocultar contenidos</a>
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="d23aefe514db86a02c339ef7-|49" defer></script>
+    <script>
+        let parrafo1 = document.getElementById("contenidos_1");
+        let parrafo2 = document.getElementById("contenidos_2");
+        let parrafo3 = document.getElementById("contenidos_3");
+        let ocultar1 = document.getElementById("enlace_1");
+        let ocultar2 = document.getElementById("enlace_2");
+        let ocultar3 = document.getElementById("enlace_3");
+
+        ocultar1.addEventListener("click", () => {
+            if (parrafo1.style.display === "none") {
+                parrafo1.style.display = "block";
+            } else {
+                parrafo1.style.display = "none";
+                ocultar1.innerHTML = "Revelar contenidos";
+            }
+        });
+
+        ocultar2.addEventListener("click", () => {
+            if (parrafo2.style.display === "none") {
+                parrafo2.style.display = "block";
+            } else {
+                parrafo2.style.display = "none";
+                ocultar2.innerHTML = "Revelar contenidos";
+            }
+        });
+
+        ocultar3.addEventListener("click", () => {
+            if (parrafo3.style.display === "none") {
+                parrafo3.style.display = "block";
+            } else {
+                parrafo3.style.display = "none";
+                ocultar3.innerHTML = "Revelar contenidos";
+            }
+        });
+    </script>
+</body>
+
+</html>
